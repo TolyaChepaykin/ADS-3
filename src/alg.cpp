@@ -6,9 +6,9 @@ while (f <= l) {
   m = f + (l - f) / 2;
   if (value == arr[m]) {
     return arr[m];
-   } else if (value > arr[m]) {
+  } else if (value > arr[m]) {
     f = m;
-   } else if (value < arr[m]) {
+  } else if (value < arr[m]) {
     l = m;
   }
 }
