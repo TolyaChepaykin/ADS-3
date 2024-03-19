@@ -1,11 +1,18 @@
 // Copyright 2021 NNTU-CS
 
 int cbinsearch(int *arr, int size, int value) {
-int f = 0, l = size, m = 0;
+int f = 0, l = size, m = 0, count = 0;
 while (f <= l) {
   m = f + (l - f) / 2;
   if (value == arr[m]) {
-    return arr[m];
+    while(arr[m] == value) {
+      m--;
+    }
+    while(arr[m] == value) {
+      m++;
+      count++;
+    }
+    return count;
   } else if (value > arr[m]) {
     f = m;
   } else if (value < arr[m]) {
