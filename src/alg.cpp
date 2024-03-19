@@ -5,10 +5,10 @@ int f = 0, l = size, m = 0, count = 0;
 while (f <= l) {
   m = f + (l - f) / 2;
   if (value == arr[m]) {
-    while(arr[m] == value) {
+    while (arr[m] == value) {
       m--;
     }
-    while(arr[m] == value) {
+    while (arr[m] == value) {
       m++;
       count++;
     }
