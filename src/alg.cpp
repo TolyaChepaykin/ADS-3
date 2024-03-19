@@ -12,7 +12,7 @@ while (f <= l && m != -10) {
       m++;
       count++;
     }
-  } 
+  }
   if (count > 0) {
     m = -10;
   } else if (value > arr[m]) {
